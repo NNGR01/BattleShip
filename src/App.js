@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
@@ -17,8 +17,20 @@ function App() {
     [9,0,0,0,0,0,0,0,0,0]
 
   ]
+
+ 
+for(var i = 0; i < gameBoard.length; i++){
+      
+      
+      gameBoard.forEach((Element,index,array) =>{
   
-  const [count, setCount] = useState(0);
+        console.log(Element[i])
+        console.log(index)
+      
+      })
+    
+    }
+ /*  const [count, setCount] = useState(0);
   const numeroRandom = count + Math.floor(Math.random() * 2)
   const ataque = () => {
     if(numeroRandom === 1){
@@ -27,7 +39,7 @@ function App() {
     else if(numeroRandom === 0){
       setCount(numeroRandom + 3)
     }
-  }
+  } */
 
   return (
     <div className="App">
@@ -51,16 +63,16 @@ function App() {
 
             <div className="row">
             <div className="cuadrado col-sm-1">1</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {numeroRandom}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-            <div className="cuadradom col-sm-1"onClick={ataque}> {count + Math.floor(Math.random() * 2)}</div>
-                     
+            <div className="cuadradom col-sm-1"> {gameBoard[1][1]}</div>
+            <div className="cuadradom col-sm-1" index={gameBoard[1][2]}> </div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][3]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][4]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][5]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][6]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][7]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][8]}</div>
+            <div className="cuadradom col-sm-1"> {gameBoard[1][9]}</div>
+      
            </div>
 
             <div className="row">
