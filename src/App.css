@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: wrap;
 }
 
 .App-link {
@@ -36,22 +37,31 @@
     transform: rotate(360deg);
   }
 }
-.cuadrado {
-  width: 50px;
-  height: 50px;
-  outline: 1px solid orange;
+.tablero{
+  width: 50%;
 }
 .cuadradom {
   width: 50px;
   height: 50px;
   outline: 1px solid orange;
   background-color: blue;
-
+  font-size: xx-large;
+  
 }
+
 .cuadradop {
+  position: relative;
+  width: 50%;
+  font-size: x-large;
+  padding: 6px;
+} 
+/* .cuadradop {
   width: 50px;
   height: 50px;
   outline: 1px solid orange;
   background-color: grey;
 
+}  */
+h4{
+  padding-top: 15px;
 }
