@@ -185,7 +185,7 @@ function App() {
         <h4>Instructions</h4>
         <h5>the ships are hiding in the numbers "1" </h5>
         <h6>
-          0 = Empty
+          0 = Empty 
         </h6>
         <h6>
         1 = part of a ship
